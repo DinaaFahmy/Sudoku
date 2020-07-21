@@ -1,0 +1,157 @@
+#game{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: lightgreen;
+    border-radius:10px;
+}
+#gridC{
+    display:grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
+    border:1px solid black;
+    grid-gap:0px;
+}
+
+button{
+  border: 1px solid grey;
+  background-color: oldlace;
+  width:80px;
+  height: 80px;
+  grid-gap:1px;
+}
+button:focus{
+  border:2px solid red;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.column {
+    float: left;
+    width: 80px;
+    padding: 15px;
+  }
+
+.row{
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  }
+
+img{  
+width:80px;
+height: 80px;
+left:50%;    
+  }
+
+  #t{
+position: absolute;
+right:50%;
+bottom:0px;
+right:100px;
+font-family: "Comic Sans MS";
+font-size:3em;
+font-weight: 1000;
+font-variant: small-caps;
+  }
+
+
+
+  #alertx {
+    padding: 20px;
+    position:absolute;
+    background-color: #f44336; 
+    color: white;
+    margin-bottom: 15px;
+    transform: translate(-50%,-50%);
+    top:51%;
+      left:50%;
+      border-radius: 15px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      width:500px;
+      height:250px;
+      display: none;
+
+  }
+  
+  
+
+  .bt{
+width:70%;
+display:block;
+margin:5px auto;
+border-radius: 5px;
+height:40px;
+background-color: white;
+cursor:pointer;
+font-size:20px;
+font-family:"Comic Sans MS" ;
+font-weight: bolder;
+border:none;
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  .bt:hover{
+    background-color: rgb(247, 239, 239);;
+  }
+  a{
+    text-decoration: none;
+    color: #f44336;
+}
+  #idp{
+text-align: center;
+font-family: "Comic Sans MS";
+font-size:3em;
+font-weight: 1000;
+font-variant: small-caps;
+margin-bottom: 30px;
+margin-top:15px;
+  }
+
+  #startbtn{
+    position: absolute;
+    display:inline-block;
+    margin:20px;
+    left:49%;
+    bottom:-10px;
+    transform: translate(-50%,-50%);
+    height:50px;
+    width:150px;
+    border-radius:15px;
+    background-color: #f44336;
+    color:white;
+    font-weight: bold;
+    font-size:20px;
+    font-family:"Comic Sans MS";
+    font-variant: small-caps;
+    border:none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  #startbtn:hover{
+cursor:pointer;
+background-color: #bd352bf1;
+  }
+  h1{
+    position:absolute;
+    font-family: "Comic Sans MS";
+font-size:45px;
+font-weight: 1000;
+margin-top: 1%;
+margin-left:3%;
+ color: whitesmoke;
+    
+}
+  

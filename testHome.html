@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    
+<style>
+   
+    .button{
+    position: absolute;
+    display:inline-block;
+    margin:20px;
+    left:49%;
+    bottom:20px;
+    transform: translate(-50%,-50%);
+    
+}
+.button a{
+  color:white;
+  font-family:"Comic Sans MS";
+  font-weight:bolder;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.button a:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+    body{
+    
+    text-align:center;
+    background-image: url('mainbackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+    #bg-modal{
+        width: 100%;
+        height:100%;
+        background-color:black;
+        opacity:0.9;
+        position:absolute;
+        top:0;
+        display:flex;
+justify-content: center;
+align-items: center;
+
+    }
+    .modal-content{
+        width:500px;
+        height:300px;
+        background-image: url("skyb.jpg");
+        border-radius: 5px;
+        text-align: center;
+    }
+
+input{
+    width:50%;
+    display:block;
+    margin:50px auto;
+    border-radius: 5px;
+    height:30px;
+}
+button{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4caf50;
+    width:30%;
+    border-radius:20px ;
+    padding:10px;
+    color:#ffffff;
+    font-size:14px;
+    cursor:pointer;
+  
+}
+button:hover, button:active{
+background:#43A047;
+}
+#pid{
+font-family: "Comic Sans MS";
+font-size:30px;
+font-weight: 1000;
+font-variant: small-caps;
+margin-top: 50px;
+}    
+legend{
+    font-family: "Comic Sans MS";
+font-size:30px;
+font-weight: 1000;
+font-variant: small-caps;  
+display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:lightcoral ;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+fieldset{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius:10px;
+    border:4px solid black;
+}
+#close{
+    position: absolute;
+    right:33%;
+    font-size:42px;
+    color:black;
+    cursor:pointer;
+    transform: rotate(45deg);
+}
+p{
+font-family: "Comic Sans MS";
+font-size:20px;
+font-weight: 1000;
+}
+
+</style>
+</head>
+<body>
+    <form>
+        <fieldset>
+         <legend>how to play</legend>
+         <p>
+         The game starts with 4 different shapes, you can insert each shape by pressing on any number from 1 to 4 on the keyboard: <br>
+         number 1: <img src="images/1.png" style="width:40px; height:40px; display:inline;">, 
+         number 2: <img src="images/2.png" style="width:40px; height:40px; display:inline;">,
+         number 3: <img src="images/3.png" style="width:40px; height:40px; display:inline;">, 
+         number 4: <img src="images/4.png" style="width:40px; height:40px; display:inline;"> <br>
+    
+          
+         You can't insert the same image more than once in the same row or column. You have 2 minutes to win. <br><br> Good Luck!  
+         </p>
+         </fieldset>
+</form>
+
+    <div class="button" >
+        <a href="sudoku.html">PLAY NOW</a>
+      </div>
+<div id="bg-modal">
+<div class="modal-content">
+    <div id="close">+</div>
+<form>
+    <p id="pid">enter your name </p>
+    <input type="text" placeholder=" user name" name="USERname" id="userN">
+    
+</form>
+<button type="submit" id="sub" >SUBMIT</button>
+</div>
+</div>
+
+
+<script src="HomePage.js"></script>
+
+</body>
+</html>
